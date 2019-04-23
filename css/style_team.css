@@ -1,0 +1,246 @@
+
+html{
+    height:98%
+}
+footer{
+        margin-bottom: -0.6vw;
+}
+html, body {
+    margin:0;
+    padding:0;
+}
+
+/*Sastavs sakums */
+h4{
+	color: #9191ad;
+	margin-top: 2.5vw;
+	margin-bottom: -1vw;
+}
+
+.svg_puck svg{
+	width: 40px;
+	color: #a12830;
+	margin-left: 14vw;
+}
+
+.one svg{
+	margin-left: 1.9vw;
+	margin-top: 2vw;
+}
+
+
+.button_team{
+	display: block;
+	width: 9%;
+	border: 1px solid #a12830;
+	background-color: #a12830;
+	border-radius: 50px;
+	float: right;
+	height: auto;
+
+	text-align:center;
+	margin-right: 5vw;
+}
+
+.button_team_text{
+	font-weight: 700;
+	font-size: 1em;
+	color: #fff;
+	display: inline-block;
+	padding-top: 0.8vw;
+	padding-bottom: 0.8vw;
+	cursor: pointer;
+}
+
+.button_team:hover{
+	opacity: 0.9;
+}
+
+.hr_galery h1{
+	 font-size: 2em;
+}
+
+.goalkepers{
+	font-size: 2em;
+}
+
+
+@media only screen and (max-width: 700px) {
+	.hr_galery {
+		font-size: 1em;
+
+		margin-top: 20px !important;
+	}
+	
+	.svg_puck svg{
+		width: 30px;
+	}
+	.team_gads h4{
+		margin-bottom: -5vw;
+	}
+
+
+	.goalkepers{
+			font-size: 1.5em;
+	}
+	
+}
+
+
+@media only screen and (max-width: 850px) {
+	.button_team{
+		display: none;
+	}
+
+	.svg_puck svg{
+		margin-left: 0;
+	}
+
+
+}
+
+
+table{
+	width: 85%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+td, th {
+    line-height: 1.4;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+    word-break:break-all;
+}		
+
+th:hover{
+	cursor: pointer;
+}
+th{
+	vertical-align: middle;
+	padding: 0 0 13px 0;
+}
+table img{
+		width: 30px;
+		padding-top: 0.5vw;
+}
+
+.player {
+	color: #a12830;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px){
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr { 
+        display: block; 
+    }
+    
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr{
+    	border-bottom: 4px solid #eee;
+    	border-collapse: collapse;
+    }
+    table{
+    	font-size: 1em;
+    	overflow-y: hidden;
+    }
+
+    table img{
+			width: 25px; 
+			padding-top: 2vw;
+    }
+
+    td { 
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 2px solid #eee; 
+        position: relative;
+        padding-left: 50%; 
+    }
+    
+    td,th{
+    	line-height: 2;
+    	font-size: 1em;
+    	vertical-align: inherit;
+    }
+    td:before { 
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+    }
+
+    td:nth-of-type(1):before { content: "Nr."; font-size: 17px;color: #5d5d5d;}
+    td:nth-of-type(2):before { content: "Speletajs"; font-size: 17px;;color: #5d5d5d;}
+    td:nth-of-type(3):before { content: "Vecums"; font-size: 17px;color: #5d5d5d;}
+    td:nth-of-type(4):before { content: "Dimsanas gads"; font-size: 17px;color: #5d5d5d;}
+    td:nth-of-type(5):before { content: "Dzimsanas vieta";  font-size: 17px;;color: #5d5d5d;}
+    td:nth-of-type(6):before { content: "Valsts";  font-size: 17px;color: #5d5d5d; padding-top: 8px;}
+    td:nth-of-type(7):before { content: "Augums";  font-size: 17px;color: #5d5d5d;}
+    td:nth-of-type(8):before { content: "Svars";  font-size: 17px;color: #5d5d5d;}
+    td:nth-of-type(9):before { content: "Satveriens";font-size: 17px;color: #5d5d5d;}
+    td:nth-of-type(10):before { content: "Debija Dinamo";font-size: 17px;color: #5d5d5d;}
+
+    .treneri td:nth-of-type(1):before { content: "Vards"; font-size: 17px;color: #5d5d5d;}
+    .treneri td:nth-of-type(2):before { content: "Amats"; font-size: 17px;;color: #5d5d5d;}
+
+    footer{
+        margin-bottom: -2.3vw;
+}
+}
+@media screen and (min-width:1200px){
+   table{
+       font-size:1vw;
+   }
+
+}
+
+.svg svg{
+		margin-right: 13.5vw;
+		margin-top: 3vw;
+}
+
+.treneri td, th {
+	line-height:3;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+/*Sastavs beigas */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+		#strelka{
+			display: block;
+		}
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+		.kartinki{
+			margin-left: -30vw;
+		}
+
+		footer{
+			position: relative;
+		}
+}
+
+@media only screen and (max-width:468px){
+		#menuhrefs{
+			display: none;
+		}
+
+}

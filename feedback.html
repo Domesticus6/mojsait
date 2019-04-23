@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Feedback</title>
+   <meta charset="utf-8">
+   <meta name="keywords" content="test, site, website"/>
+   <meta name="description" content="Hockey site for CLUB Dinamo Riga(not official)" >
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="icon" href="favicon.ico" type="image/x-icon">
+   <link rel="shortcut icon" href="favicon.ico" type= "image/x-icon">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="css/style_video.css">
+   <link rel="stylesheet" type="text/css" href="css/style_foto.css">
+   <link rel="stylesheet" type="text/css" href="css/contact.css">
+   <link rel="stylesheet" type="text/css" href="css/style_feedback.css">
+   <SCRIPT type="text/javascript" src="js/menu_small_function.js"></SCRIPT>
+   <script type="text/javascript" src="js/loader_function.js"></script>
+   <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+   <script type="text/javascript" src="js/perehod_jakora.js"></script>
+</head>
+<body>
+<div id="animation">
+<div id="page-wrap">
+   <header>
+      <a id="menuu"></a>
+       <span><a href="index.html" title="Uz galveno lapu" id="logo" class="left1">Dinamo Riga</a></span>
+       <label for="type_header"></label>
+       <input type="text" class="field" id="type_header" placeholder="Ko gribat meklet?"  />
+       <span class="sponsor"> Musu sponsori</span>
+       <div class="kartinki">
+        <a href="http://bmw.lv" target="_blank"><img class="bmw" src="images/bmv.png" alt="Bmw" title="Bmv"/></a>
+       <a href="index.html" target="_blank"><img class="itera" src="images/itera_logo.png" alt="Itera" title="Itera"/></a>
+       <a href="http://skonto.group/lv" target="_blank"><img class="skonto" src="images/skontogroup.png" alt="Skontogroup" title="Skontogroup"/></a>
+      </div>
+   </header>
+	<div class="clear"><br></div>
+       <a><div id="strelka"></div></a>
+       <div id="menu">Sadalas<hr /></div>
+       <div id="menuhrefs">
+           <a href="infa.html">Par mums</a>
+           <a href="news.html">Zinas</a>
+           <a href="team.html">Komandas sastavs</a>
+           <a href="contact.html">Kontakti</a>
+           <a href="feedback.html">Nosutit formu</a>
+           <a href="foto.html">Foto galerija</a>
+           <a href="video.html">Video galerija</a>
+       </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)"
+            class="closebtn"
+            onclick="closeNav()">×</a>
+            <div class="overlay-content">
+                <a href="infa.html">Par mums</a>
+                <a href="news.html">Zinas</a>
+                <a href="team.html">Komandas sastavs</a>
+                <a href="contact.html">Kontakti</a>
+                <a href="feedback.html">Nosutit formu</a>
+                <a href="foto.html">Foto galerija</a>
+                <a href="video.html">Video galerija</a>
+                  </div>
+        </div>
+
+        <div class="menu2_main" onclick="openNav()" style="margin-bottom: -1.2vw;">
+           <div class="menu2"></div>
+           <div class="menu2"></div>
+           <div class="menu2"></div>
+       </div>
+
+  <div class="feedback"> 
+      <div class="feedback_window">
+          <h1>ZIŅAS E-PASTĀ</h1>
+          <div class="feedback_item">
+            <form>
+              <span class="button">
+                    <p><img src="https://img.icons8.com/metro/52/000000/name.png" alt=""><label for="one"></label>
+                    <input type="text" name="Vards" placeholder="Vards" id="one" pattern="[A-Za-z]{1,15}" title="Lietotaja vardam jabut tikai lieli un mazi latiņu burti! piemēram Andrejs" required></p>
+                    <p><img src="https://img.icons8.com/metro/52/000000/name.png" alt=""><label for="one1"></label><input  id="one1" type="text" name="Uzvards" placeholder="Uzvards"
+                    pattern="[A-Za-z]{1,15}" title="Lietotaja uzvardam jabut tikai lieli un mazi latiņu burti! piemēram Rastorgujevs" required></p>
+                    <p><img src="https://img.icons8.com/metro/26/000000/new-post.png" alt=""><label for="one2"></label><input  id="one2" type="email" name="e-pasts" placeholder="E-pasts" required></p>
+                    <p><img src="https://img.icons8.com/metro/52/000000/name.png" alt=""><label for="one3"></label><input id="one3" type="text" name="Vecums" placeholder="Vecums" pattern="[1-9]{1,2}" title="Lietotaja vecumam jabut tikai un vienīgi cipari(nevairāk par skaitļiem)! piemēram 12" required></p>
+                    <p><img src="https://img.icons8.com/metro/26/000000/gender.png" alt=""><label for="one4"></label><input id="one4" type="text" name="Dzimums" placeholder="Dzimums" pattern="[A-Za-z]{7,7}" title="Lietotaja dzimumam  jabut sieviešu vai viriešu!" required></p>
+              </span>
+                <p class="submit"><input  type="submit" onclick="openLoader();alertt();"  value="PIETEIKTIES" id="funkystyling" /></p>
+              <br>
+            </form>
+          </div>
+      </div>
+  </div>
+  <div id="loader_main"><div id="loader"></div></div>
+  <div class="partner_main">
+      <div class="item_1" >
+          <h2>ĢENERĀLPARTNERIS</h2>
+          <div class="image"><img src="images/gazprom-export.png" alt=""></div>
+      </div>
+      <div class="item_2" style="border-left: 3px solid #E2E2E2;">
+          <h2>DINAMO PARTNERI</h2>
+            <div class="item_2_img">
+              <img src="images/gazprom-export.png" alt="">
+              <img src="images/latvijas-gaze.png" alt="">
+              <img src="images/skontogroup.png" alt="">
+              <img src="images/bmv.png" alt="">
+              <img src="images/itera_logo.png" alt="">
+            </div>
+      </div>
+   </div>
+   </div>
+  <footer>
+           <div class="left"> All right reserved &copy 2018</div>
+           <div class="right"><a href="https://www.facebook.com/dinamorigaofficial" target="_blank"><img src="images/facebook.png" alt="Facebook" title="Facebook"/></a><a href="https://twitter.com/hcDINAMORIGA" target="_blank"> <img  id="twitter" src="images/twitter.png" alt="Twitter" title="Twitter" /></a>Socialas vietnes </div>
+   </footer>
+</div>
+</body>
+</html>

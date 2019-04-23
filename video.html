@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Video galerija</title>
+   <meta charset="utf-8">
+   <meta name="keywords" content="test, site, website"/>
+   <meta name="description" content="Hockey site for CLUB Dinamo Riga(not official)" >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="icon" href="favicon.ico" type="image/x-icon">
+   <link rel="shortcut icon" href="favicon.ico" type= "image/x-icon">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="css/style_video.css">
+   <link rel="stylesheet" type="text/css" href="css/style_foto.css">
+   <SCRIPT type="text/javascript" src="js/menu_small_function.js"></SCRIPT>
+   <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+   <script type="text/javascript" src="js/perehod_jakora.js"></script>
+</head>
+<body>
+<div id="animation">
+<div id="page-wrap">
+   <header>
+       <a id="menuu"></a>
+       <span><a href="index.html" title="Uz galveno lapu" id="logo" class="left1">Dinamo Riga</a></span>
+       <label for="type_header"></label>
+       <input type="text" class="field" id="type_header" placeholder="Ko gribat meklet?"/>
+       <span class="sponsor"> Musu sponsori</span>
+       <div class="kartinki">
+        <a href="http://bmw.lv"><img class="bmw" src="images/bmv.png" alt="Bmw" title="Bmv"/></a>
+       <a href="index.html"><img class="itera" src="images/itera_logo.png" alt="Itera" title="Itera"/></a>
+       <a href="http://skonto.group/lv"><img class="skonto" src="images/skontogroup.png" alt="Skontogroup" title="Skontogroup"/></a>
+      </div>
+   </header>
+	<div class="clear"></div>
+       <a><div id="strelka"></div></a>
+       <div id="menu">Sadalas<hr /></div>
+       <div id="menuhrefs">
+           <a href="infa.html">Par mums</a>
+           <a href="news.html">Zinas</a>
+           <a href="team.html">Komandas sastavs</a>
+           <a href="contact.html">Kontakti</a>
+           <a href="feedback.html">Nosutit formu</a>
+           <a href="foto.html">Foto galerija</a>
+           <a href="video.html">Video galerija</a>
+       </div>
+
+
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)"
+            class="closebtn"
+            onclick="closeNav()">×</a>
+            <div class="overlay-content">
+                <a href="infa.html">Par mums</a>
+                <a href="news.html">Zinas</a>
+                <a href="team.html">Komandas sastavs</a>
+                <a href="contact.html">Kontakti</a>
+                <a href="feedback.html">Nosutit formu</a>
+                <a href="foto.html">Foto galerija</a>
+                <a href="video.html">Video galerija</a>
+                  </div>
+        </div>
+
+        <div class="menu2_main" onclick="openNav()" style="margin-bottom: -1.2vw;">
+           <div class="menu2"></div>
+           <div class="menu2"></div>
+           <div class="menu2"></div>
+       </div>
+
+   <div class="all" style="margin-top: 2vw;">
+       <label for="desktop"></label>
+    <input checked type="radio" name="respond" id="desktop">
+      <article id="slider">
+          <input checked type="radio" name="slider" id="switch1">
+          <input type="radio" name="slider" id="switch2">
+          <input type="radio" name="slider" id="switch3">
+          <input type="radio" name="slider" id="switch4">
+          <input type="radio" name="slider" id="switch5">
+        <div id="slides">
+          <div id="overflow">
+            <div class="image">
+              <article><video  controls="controls" poster="images_for_video/img_1.jpg" ><source src="videos/video_1.mp4" ></video></article>
+              <article><video  controls="controls" poster="images_for_video/img_2.jpg"><source src="videos/video_2.mp4"></video></article>
+              <article><video  controls="controls" poster="images_for_video/img_3.jpg"><source src="videos/video_3.mp4" ></video></article>
+              <article><video  controls="controls" poster="images_for_video/img_4.jpg"><source src="videos/video_4.mp4" ></video></article>
+              <article><video  controls="controls" poster="images_for_video/img_5.jpg"><source src="videos/video_5.mp4" ></video></article>
+            </div>
+          </div>
+        </div>
+        <div id="controls">
+          <label for="switch1"></label>
+          <label for="switch2"></label>
+          <label for="switch3"></label>
+          <label for="switch4"></label>
+          <label for="switch5"></label>
+        </div>
+        <div id="active">
+          <label for="switch1"></label>
+          <label for="switch2"></label>
+          <label for="switch3"></label>
+          <label for="switch4"></label>
+          <label for="switch5"></label>
+        </div>
+      </article>
+  </div>
+
+   <div class="partner_main">
+   		<div class="item_1">
+   				<h2>ĢENERĀLPARTNERIS</h2>
+            <div class="image"><img src="images/gazprom-export.png" alt=""></div>
+   		</div>
+   		<div class="item_2">
+   				<h2>DINAMO PARTNERI</h2>
+   					<div class="item_2_img">
+   						<img src="images/gazprom-export.png" alt="">
+   						<img src="images/latvijas-gaze.png" alt="">
+   						<img src="images/skontogroup.png" alt="">
+   						<img src="images/bmv.png" alt="">
+   						<img src="images/itera_logo.png" alt="">
+   					</div>
+   		</div>
+   </div>
+</div>
+ <footer>
+        <div class="left"> All right reserved &copy 2018</div>
+        <div class="right"><a href="https://www.facebook.com/dinamorigaofficial" target="_blank"><img src="images/facebook.png" alt="Facebook" title="Facebook"/></a><a href="https://twitter.com/hcDINAMORIGA" target="_blank"> <img  id="twitter" src="images/twitter.png" alt="Twitter" title="Twitter" /></a>Socialas vietnes </div>
+  </footer>
+</div>
+</body>
+</html>

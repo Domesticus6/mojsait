@@ -1,0 +1,15 @@
+@media only screen 
+and (max-device-width : 360px){
+  #strelka{
+    right: 8vw;
+    bottom: 10vw !important; 
+  }
+
+	.hr_galery{
+		font-size: 4vw;
+	}
+
+	.infa_image2 img{
+		width: 95%;
+	}
+}

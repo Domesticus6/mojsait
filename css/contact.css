@@ -1,0 +1,113 @@
+footer{
+	margin-top:0;
+}
+
+body{
+	overflow-x: hidden;
+}
+/*Dla mobilok kogda umensaem ekran nacalo */
+
+
+@media screen and (max-width: 568px) {
+	.contact_infa iframe{
+		width: 10%;
+	}
+
+	.kontakti{
+		margin-top: 5vw !important;
+	}
+}
+@media screen and (max-width: 768px) {
+	footer{
+		position: relative;
+	}
+
+	#contact_line_var{
+		line-height: 1.5 !important;
+		margin-bottom: -10px;
+	}
+
+	.contact_infa iframe{
+		width: 90%;
+		float: left;
+		margin-left: 5vw;
+	}
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1500px) {
+	.contact_infa iframe{
+		width: 90%;
+		float: left;
+		margin-left: 5vw;
+	}
+}
+
+/*Dla mobilok kogda umensaem ekran nacalo */
+
+/*Nacalo class dla opisanija */
+.pasts{
+	color: #A12830;
+	font-weight: 600;
+}
+.partner_main{
+	background-color: #fff;
+	border-top: 3px solid #E2E2E2;
+}
+
+.kontakti {
+	text-transform: uppercase;
+	margin-top:3vw;
+	font-size: 2.5em;
+	color: #222222;
+	text-align: center;
+}
+.contact_infa{
+	width: 100%;
+	display: block;
+	height:auto;
+}
+
+iframe{
+	float: right;
+	margin-right: 5vw;
+}
+
+.contact_text{
+	display:block;
+	float: left;
+	margin-left: 5vw;
+}
+
+.contact_line{
+	line-height: 0.5;
+}
+
+/*Konec */
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+	.partner_main{
+		margin-top:5vw;
+	}
+
+	footer{
+		position: relative;
+	}
+}
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape)  {
+	.partner_main{
+		margin-top:15vw;
+	}
+
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+	#strelka{
+		display: block;
+	}
+}

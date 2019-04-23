@@ -1,0 +1,641 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height:98%
+}
+
+html, body {
+    margin:0;
+    padding:0;
+}
+.kontakti {
+    font-family:Georgia,sans-serif !important;
+    color: #E40C2B !important;
+    margin-top: 4vw;
+}
+
+@media only screen and (max-width:468px){
+    #menuhrefs{
+        display: none;
+    }
+
+    .kontakti h1{
+        margin-top: 5vw;
+    }
+}
+
+/* Slaidera sakums */
+.carousel {
+    position: relative;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.64);
+    width: 75%;
+    margin:26px auto 5vw auto;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+
+.carousel-item img {
+    display: block;
+    height: 45vw;
+    width: 110%;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3,
+#carousel-4:checked ~ .control-4{
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet {
+    color: #428bca;
+}
+
+.example_text {
+    display:block;
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-align: center;
+    color:#fff;
+    padding:35px;
+    background-color:rgba(0,0,0,.3);
+    line-height: 0.8;
+}
+@media screen and (max-width: 1000px) {
+    .example_text{
+        padding:8px;
+    }
+}
+.example_text h1{
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .example_text h1{
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .example_text  h1{
+        font-size: 4vw;
+    }
+
+    .example_text{
+        padding: 1px;
+        background: transparent;
+    }
+
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.33), -1px 0 2px rgba(255, 255, 255, 0);
+}
+
+/* Slaidera beigas */
+
+
+/* Dinamo Tv sakums */
+.dinamo_tv_main{
+    width: 100%;
+    height: auto;
+    background-color: #701319;
+    display: block;
+}
+
+.dinamo_tv_main h3{
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    font-size: 2.3vw;
+    padding-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.dinamo_tv_videos{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 3vw;
+}
+
+.item{
+    width: 33%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1168px) {
+
+    .item video{
+        width: 80%;
+    }
+
+    .dinamo_tv_videos{
+        display: block;
+        text-align: center;
+    }
+
+    .item{
+        width: 100%;
+    }
+
+    .item video{
+        margin-bottom: 2vw;
+    }
+
+    .dinamo_tv_main h3{
+        font-size: 4vw;
+        padding-top: 4vw;
+    }
+
+    .carousel{
+        width: 100%;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 55vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .dinamo_tv_main h3{
+        font-size: 6vw;
+        padding-top: 6vw;
+    }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+    footer{
+        position: relative;
+    }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) and (orientation: portrait)  {
+    #strelka{
+        display: block;
+    }
+}
+/*Media query for ipad pro*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+    #strelka{
+        display: none;
+    }
+
+
+}
+/*Media query for ipad pro*/
+
+
+/* Dinamo Tv beigas*/
+
+/* Banner ar hokejistu sakums*/
+.banner img{
+    width: 100%;
+    height: 10vw;
+}
+
+.banner{
+    width: 75%;
+    margin:2vw auto 1vw auto;
+    height: auto;
+}
+
+.banner img:hover{
+    opacity: 1;
+}
+/* Banner ar hokejistu beigas*/
+
+/* News related,popular,new sakums*/
+.news_main{
+    background-color: white;
+    display: block;
+    width: 100%;
+    height: 58vw;
+}
+
+.news_main h2{
+    color: #aeaeae;
+    font-weight: 500;
+}
+
+
+.news_main img:hover{
+    opacity: 1;
+}
+.news_main h2:hover{
+    color:#ed1c24;
+}
+
+.items,.items1,.items2{
+    display: inline-block;
+    margin-right: 0.5vw;
+    vertical-align: top;
+}
+
+
+.items{
+    width: 25%;
+}
+
+
+.items1{
+    width: 42.5%;
+    height: 30vw;
+}
+
+.items2{
+    width: 29%;
+}
+
+.items:first-child{
+    margin-left: 1vw;
+}
+
+.div_h2{
+    display: inline-block;
+    width: 100%;
+    background-color: #f2f3f5;
+    height: 3vw;
+}
+
+.div_h2 h2{
+    margin-left: 0.5vw;
+    line-height: 1;
+}
+
+.content{
+    background-color: #e2e2e2;
+    height: auto;
+    width: 100%;
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) and (orientation: portrait)  {
+    .div_h2 h2{
+        line-height: 1;
+    }
+
+    .news_main, .items,.items1,.items2{
+        display:block;
+        margin-right: 0.5vw;
+        width: 98%;
+    }
+
+    .news_main{
+        height: 50vw;
+        margin-left: 1vw;
+    }
+
+    .div_h2{
+        height: 7vw;
+    }
+
+    .content img{
+        max-width: 60%;
+    }
+
+    .items_img img{
+        padding-top: 2vw;
+    }
+
+    .example_text{
+        line-height: 1;
+        padding: 10px;
+    }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) and (orientation: landscape){
+    .div_h2 h2{
+        line-height: 1;
+    }
+
+    .div_h2{
+        height: 4vw;
+    }
+}
+
+@media only screen
+and (max-device-width : 430px){
+    .banner img{
+        width: 100%;
+        height: 55px;
+    }
+
+    .banner{
+        width: 80%;
+    }
+
+    .news_main, .items,.items1,.items2{
+        display:block;
+        margin-right: 0.5vw;
+        width: 98%;
+        margin-bottom: 5vw;
+        height: auto;
+    }
+
+    .content {
+        padding-bottom: 1vw;
+    }
+    .news_main{
+        height: 50vw;
+        margin-left: 1vw;
+    }
+
+    .div_h2{
+        height: 10vw;
+    }
+
+    .div_h2 h2{
+        line-height: 1;
+    }
+
+    .content img{
+        max-width: 60%;
+    }
+
+    .items_img img{
+        padding-top: 2vw;
+    }
+
+    .content h4{
+        font-size: 4vw;
+    }
+    .content .items_img:first-child {
+        padding-top: 7vw;!important
+    }
+
+    .kontakti {
+        margin-top: 5vw !important;
+    }
+}
+
+
+.items_img{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.items_img:first-child{
+    padding-top: 1vw;
+}
+
+.img1 img{
+    width: 85%;
+}
+
+.img2 img{
+    width: 80%;
+}
+
+.img3 img{
+    width: 75%;
+}
+
+@media screen and (max-width: 945px) {
+    .news_main, .items,.items1,.items2{
+        display:block;
+        margin-right: 1vw;
+        width: 98%;
+        margin-left: 1vw;
+        height: auto;
+    }
+
+    .div_h2{
+        height: 7vw;
+    }
+
+    .content img{
+        max-width: 60%;
+    }
+
+    footer{
+        width: 100%;
+        margin-left: -1vw;
+    }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px)   and (orientation: portrait)   {
+    #strelka{
+        display: block;
+    }
+
+    .news_main, .items,.items1,.items2{
+        height: auto;
+    }
+
+    .example_text{
+        font-size: 1.2vw;
+        padding: 20px;
+        line-height: 0.9;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px)   and (orientation: landscape)   {
+    #strelka{
+        display: block;
+    }
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    opacity: 0.8;
+}
+i:hover{
+    color:#ed1c24;
+}
+
+i{
+    margin-right: 0;
+}
+
+.text_fa{
+    margin-left: 0.3vw;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 0.3vw;
+    color: #6c757d;
+}
+
+.i_block{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 0.4vw;
+}
+
+.topics {
+    margin-top: -0.0011vw;
+    text-align: center;
+    color: #343a40;
+    font-weight: 200;
+    font-size: 16pt;
+}
+
+
+.topics:hover{
+    color:#ed1c24;
+}
+
+.banner_nike{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+@media only screen
+and (max-width : 1399px){
+    .banner_nike img{
+        width: 85%;
+    }
+}
+
+@media only screen
+and (min-width : 1310px) and (max-width: 1550px){
+    .news_main{
+        height:60vw;
+    }
+}
+
+@media only screen
+and (min-width : 1000px) and (max-width: 1310px) and  (orientation:landscape){
+    .news_main{
+        height:62vw;
+    }
+
+    .topics{
+        font-size: 1.6vw;
+    }
+}
+
+@media only screen
+and (min-width : 946px) and (max-width: 1000px){
+    .news_main{
+        height:64vw;
+    }
+
+    .topics{
+        font-size: 1.5vw;
+    }
+}
+
+.content img:hover{
+    transform: scale(1.1);
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+/* News related,popular,new beigas*/
+

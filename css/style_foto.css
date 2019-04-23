@@ -1,0 +1,245 @@
+
+html{
+	height:98%
+}
+
+html, body {
+	margin:0;
+	padding:0;
+}
+img:hover{
+	opacity:0.6;
+}
+
+h1{
+	font-size: 2.5em;
+	text-transform: uppercase;
+	color: #222222;
+	margin: 30px 0;
+}
+
+ hr.hr_galery{
+	border: 2px solid #a12830;
+	width: 4vw;
+	margin-bottom: 30px;
+}
+
+.hr_galery{
+	text-align: center;
+}
+
+/* galereja nacinajetsa */
+.main_galery{
+	display: block;
+	background-color: #701319;
+	width:100%;
+	height: auto;
+	margin-top:1vw;
+	border-top: 2px solid #701319;
+	border-bottom: 2px solid #701319;
+	text-align: center;
+}
+
+.content_window{
+	display: block;
+	width: 80%;
+	background-color: #ffffff;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content_window_item{
+	padding-top: 1vw;
+	padding-bottom: 2vw;
+	display: inline-block;
+	width: 49%;
+	height: 300px;
+}
+
+.h3 {
+	font-size: 1em;
+}
+
+.content_window_item p{
+	color: grey;
+}
+
+#animation{
+	animation: fadeIn 1.5s;
+	-webkit-animation:fadeIn 1.5s;
+}
+
+@keyframes fadeIn{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+
+@-webkit-keyframes fadeIn{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+
+@media only screen and (max-width: 1160px) {
+	.content_window_item{
+		display: flex;
+		flex-direction: column;
+		width: auto;
+	}
+
+	.content_window_item img{
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	.content_window_item {
+		overflow: hidden;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (max-width:768px){
+	#menuhrefs{
+		display: none;
+	}
+
+	.menu2{
+		display: block;
+	}
+
+
+}
+.image {
+	cursor:pointer;
+}
+
+.popup {
+	position: absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	display:none;
+	text-align:center;
+}
+
+.popup_bg {
+	background:rgba(0,0,0,0.4);
+	position:fixed;
+	z-index:1;
+	height:100%;
+	width:100%;
+}
+
+
+.popup_img {
+	position: fixed;
+	z-index:2;
+	max-height:94%;
+	max-width:94%;
+	margin:100px 150px 100px -500px;
+}
+
+.popup_img {
+	pointer-events: none;
+}
+
+@media screen and (max-width: 1250px) {
+	.popup_img {
+		max-height:44%;
+		margin-left: -300px;
+	}
+}
+@media  screen and (max-width: 768px) {
+	.popup_img {
+		max-height:34%;
+		margin-left: -200px;
+	}
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1600px){
+	.popup_img {
+		margin-left: -300px;
+		max-height:54%;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+	.popup_img {
+		position: fixed;
+		margin:auto;
+		left:0;
+		right:0;
+		top: 40%;
+	}
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+	.popup_img {
+		max-height:33%;
+		margin-left: -300px;
+	}
+}
+
+@media only screen and (min-height: 2500px) {
+	footer{
+		position:fixed;
+		bottom:0;
+	}
+}
+/* v
+
+/* galereja konec */
+
+/* nacalo kartinok */
+
+.infa_images{
+	display: block;
+	margin-top: 3vw;
+	margin-bottom: -5vw;
+	text-align: center;
+}
+
+.infa_images img{
+	margin-right: 1vw;
+}
+
+@media screen and (max-width: 850px){
+	.infa_image1 img {
+		width:200px;
+	}
+
+	.infa_image2 img{
+		width: 350px;
+	}
+}
+
+/* konec kartinok */
+
+
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+	.kartinki{
+		margin-left: 10vw;
+	}
+
+	.sponsor{
+		display: none;
+	}
+
+}
